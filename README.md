@@ -6,7 +6,7 @@
 [2]: https://img.shields.io/badge/-javascript-%23f1e05a
 [3]: https://img.shields.io/badge/license-MIT-orange
 
-I thought it would be nice to automate the creation of some folders and files I use for my front-end only projects. So thats what this does.
+I thought it would be nice to automate the creation of some folders and files I use for my front-end only projects. So that's what this does.
 
 More specifically it does the followin:
 
