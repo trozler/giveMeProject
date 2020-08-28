@@ -1,0 +1,22 @@
+{
+  "name": "givemeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "webpack": "src/js/**/*.js",
+    "css": "src/css/styles.css",
+    "html": "src/indexSrc.html"
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "webpack": "webpack || exit 1",
+    "webpack-prod": "webpack --mode=production || exit 1",
+    "css": "cp -r src/css/ dist/",
+    "html": "cp src/indexSrc.html dist/index.html",
+    "dev": "npm run webpack && npm run css && npm run html",
+    "build": "npm run webpack-prod && npm run css && npm run html"
+  },
+  "author": "Tony Rosler",
+  "license": "MIT"
+}
