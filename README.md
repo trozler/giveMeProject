@@ -6,7 +6,7 @@
 [2]: https://img.shields.io/badge/-javascript-%23f1e05a
 [3]: https://img.shields.io/badge/license-MIT-orange
 
-I thought it would be nice to automate the creation of some folders and files I use for my pure fron-end projects. So thats what this does.
+I thought it would be nice to automate the creation of some folders and files I use for my front-end only projects. So thats what this does.
 
 More specifically it does the followin:
 
@@ -16,7 +16,7 @@ More specifically it does the followin:
 - Creates basic babel and webpack configurations.
 - Gives you the option to create a private or public github repo.
 
-**Note/** All configuration files contain the default configs I use for all my pure front-end projects. They are not exhaustive and you are encouraged to add your own :).
+**Note/** All configuration files contain the default configs I use for my front-end only projects. They are not exhaustive and you are encouraged to add your own :).
 
 At the end you repo should look like this:
 
