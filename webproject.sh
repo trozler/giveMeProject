@@ -41,23 +41,7 @@ done
 
 if [ $YNtoHub -eq 1 ]
 then
-    #Public or private?
-    while true; do
-        read -p "Private repo (y or n)? " YNtoVisibility
-        case $YNtoVisibility in
-            [Yy]* ) YNtoVisibility=1; break;;
-            [Nn]* ) YNtoVisibility=0; break;;
-            * ) echo "Please answer y or n";;
-        esac
-    done
-
-    if [ $YNtoVisibility -eq 0 ]
-    then
-        gh repo create --public
-    else
-        gh repo create
-    fi
-
+    gh repo create
     git add .
     git commit -m "Hello there new repo."
     git push -u origin master
