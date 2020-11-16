@@ -1,10 +1,15 @@
 var path = require("path");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: {
+    // main: "",
+    contentPoints: "/src/content/contentPoints/contentPoints.js",
+    backgroundPoints: "/src/background/backgroundPoints.js",
+    backgroundMain: "/src/background/backgroundMain.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.bundle.js",
+    filename: "[name].chunk.js",
   },
   stats: {
     colors: true,
@@ -19,7 +24,7 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: "all",
-      filename: "vendors.main.bundle.js",
+      filename: false,
     },
   },
   module: {
@@ -35,3 +40,4 @@ module.exports = {
     alias: {},
   },
 };
+  
